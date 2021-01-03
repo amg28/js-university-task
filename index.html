@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Task</title>
+	<!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.0.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="/__/firebase/7.0.0/firebase-analytics.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css?Version=1.6" />
+		<script src="task-1.js?Version=1.6"></script>
+		<script src="task-2.js?Version=1.6"></script>
+		<script src="task-3.js?Version=1.6"></script>
+		<script src="common.js?Version=1.6"></script>
+
+	</head>
+	<body>
+		<div class="center"><img src="logo.PNG"></div><hr>
+		<div class="task">
+			<h2>Task 1</h2>
+			<h3>Description: Form generates random 7 numbers in provided number range.</h3>
+			<span>Min value:</span><input type="text" id="field1"><br>
+			<span>Max value:</span><input type="text" id="field2"><br>
+			<button id="submitTask">Submit</button>
+			<button id="submitTaskSuccess" class="hidden">&#10004;</button>
+		</div><hr>
+		<div class="task">
+			<h2>Task 2</h2>
+			<h3>Description: Form transforms entered personal id into a birth date</h3>
+			<span>Please enter your personal id number:</span><input type="text" id="field3" placeholder="Pattern example: 010599-12345"><br>
+			<button id="submitTask2">Submit</button>
+			<button id="submitTaskSuccess2" class="hidden">&#10004;</button>
+		</div><hr>
+		<div class="task">
+			<h2>Task 3</h2>
+			<h3>Description: Form inverts entered text</h3>
+			<span>Please enter your text:</span><input type="text" id="field4"><br>
+			<button id="submitTask3">Submit</button>
+			<button id="submitTaskSuccess3" class="hidden">&#10004;</button>
+		</div><hr>
+		<div class="result-table">
+			<table>
+				<tr>
+					<th>Task</th>
+					<th>Result</th>
+				</tr>
+				<tr>
+					<td>Task-1</td>
+					<td id="result-1"></td>
+				</tr>
+				<tr>
+					<td>Task-2</td>
+					<td id="result-2"></td>
+				</tr>
+				<tr>
+					<td>Task-3</td>
+					<td id="result-3"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
